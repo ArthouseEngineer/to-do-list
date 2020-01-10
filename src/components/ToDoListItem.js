@@ -1,8 +1,8 @@
 import React from "react";
 
-export const ToDoListItem = (props) => {
+const ToDoListItem = (props) => {
 
-    const {label,important = false} = props;
+    const {label, important = false} = props;
 
     const spanStyle = {
         color: important ? 'tomato' : 'black'
@@ -10,3 +10,5 @@ export const ToDoListItem = (props) => {
 
     return <span style={spanStyle}>{label}</span>;
 };
+
+export default ToDoListItem;

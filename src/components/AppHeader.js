@@ -1,5 +1,7 @@
 import React from "react";
 
-export const AppHeader = () => {
+const AppHeader = () => {
     return <h1>My toDo List</h1>;
 };
+
+export default AppHeader;

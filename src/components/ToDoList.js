@@ -1,14 +1,12 @@
 import React from "react";
-import {ToDoListItem} from './ToDoListItem';
+import ToDoListItem from './ToDoListItem';
 
-
-export const ToDoList = (props) => {
-
+const ToDoList = (props) => {
     const {toDoItems} = props;
-
-    const elements = toDoItems.map((item) => {
+    const elements = toDoItems.toJS().map(
+        (item, key) => {
         return (
-            <li>
+            <li key={key}>
                 <ToDoListItem {...item}/>
             </li>
         )
@@ -19,3 +17,5 @@ export const ToDoList = (props) => {
         </ul>
     );
 };
+
+export default ToDoList;
