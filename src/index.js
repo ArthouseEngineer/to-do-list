@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import {AppHeader} from './components/AppHeader'
 import {SearchPanel} from './components/SearchPanel'
 import {ToDoList} from './components/ToDoList'
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
     const toDoData = [
